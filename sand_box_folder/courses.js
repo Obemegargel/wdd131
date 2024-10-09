@@ -5,7 +5,11 @@ const aCourse = {
     sections: [
         { sectionNum: 1, roomNum: 'STC 353', enrolled: 26, days: 'TTh', instructor: 'Bro T'},
         { sectionNum: 2, roomNum: 'STC 347', enrolled: 28, days: 'TTh', instructor: 'Sis A'}
-    ]
+    ],
+    enrollStudent: function(sectionNum){
+        // aCourse.enrollStudent(1);// QUESTION(not researched 'nr'): in this case "this" is the same as aCourse, I don't know if I need to use 'this' still instead though.
+        console.log(this.sections.findIndex(sectionNum));
+    }
   };
 
 // create function to use document.querySelector more easily (OPTIONAL)
@@ -31,14 +35,14 @@ function sectionsOutline(section){
         <td>${section.roomNum}</td>
         <td>${section.enrolled}</td> 
         <td>${section.days}</td> 
-        <td>${section.instructor}</td> 
+        <td>${section.instructor}</td>
     </tr>`
 }
 // (2) create a function to actually make it into a table
 function sectionToTable(sections){
     const section = sections.maps(sectionsOutline); // NOTE: QUESTION: (not researched yet) figure out more what this does and how maps works, why was the const named html in the example, what is this saving to?
-
-    qs("#sections").innerHTML()
+                                                    // NOTE: QUESTION: why can't I open the live version of this on the web browser to see what it looks like on the web?
+    qs("#sections").innerHTML = section.join("");   // NOTE: QUESTION: research this whole later part to see more why it does what it does. I think I have a good idea but refresh.
 }
 
 courseInfoUpdate(aCourse);
