@@ -1,19 +1,34 @@
-body{
-    background-color: blue;
-}
 form{
     /* testing */
+    justify-self: auto;
+    width:100%;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 50% 50%;
-    gap: 10%;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    /* gap: 10%; */
     justify-items: center;
     align-items: center;
     background-color: orange;
+    position: relative;
 }
-form > section{
+/* form section{
     background-color: grey;
     border-radius: 5%;
     width: 50%;
     height: 50%;
+} */
+form .card_front{
+    position: relative;
+    width:100%;
+    top: -15px;
+    left: 10px;
+    background-color: green;
+}
+form .card_back{
+    position: relative;
+    width:100%;
+    top: 10px;
+    left: 10px;
+    background-color: green;
+    grid-column: 1;
 }
