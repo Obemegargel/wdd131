@@ -1,34 +1,26 @@
 form{
     /* testing */
+    padding-bottom: 1em;
     justify-self: auto;
     width:100%;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    /* gap: 10%; */
+    grid-template-columns: auto 5fr auto;
+    grid-template-rows: 1fr 7fr 1fr 1fr;
+    gap: 10em;
     justify-items: center;
     align-items: center;
     background-color: orange;
-    position: relative;
 }
-/* form section{
-    background-color: grey;
-    border-radius: 5%;
-    width: 50%;
-    height: 50%;
-} */
 form .card_front{
-    position: relative;
     width:100%;
-    top: -15px;
-    left: 10px;
+    /* top: -15px;
+    left: 10px; */
     background-color: green;
 }
 form .card_back{
-    position: relative;
     width:100%;
-    top: 10px;
-    left: 10px;
+    bottom: 10px;
+    /* left: 10px; */
     background-color: green;
     grid-column: 1;
 }
