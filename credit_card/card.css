@@ -44,6 +44,10 @@ form .card_back{
     background-color: lightblue;
     z-index: 1;
     border-radius: 1em;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 form .submit{
     /* width: 100%;
@@ -173,4 +177,15 @@ form .card-experation #Experation_year_input{
     box-sizing: border-box;
     grid-column: 2;
     /* grid-row-start: 2; */
+}
+/* card back */
+form .card_back div{
+    background-color: yellow;
+    max-width: 50%;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }

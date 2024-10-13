@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="card.css">
 </head>
 <body>
-    <form>
+    <form id="credit_card_form">
         <section class="card_front">
             <div class="card-total">
                 <label>TOTAL:</label>
@@ -40,8 +40,11 @@
         </section>
 
         <section class="card_back">
-            <label class="card-cvc">CVC/CVV</label>
-            <input type="text" class="card-cvc" id="cvc_cvv_input" placeholder="xxx"><!--placeholder value from https://codepen.io/jadepreis/pen/aZmPBY-->
+            <div>
+                <label class="card-cvc">CVC/CVV</label>
+                <input type="text" class="card-cvc" id="cvc_cvv_input" placeholder="xxx"><!--placeholder value from https://codepen.io/jadepreis/pen/aZmPBY-->
+            </div>
+            
         </section> 
         <button class="submit">Submit</button>
     </form>
