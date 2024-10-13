@@ -1,9 +1,11 @@
-const form = document.getElementsById("credit_card_form");//chatGPT helped with this line and the one beneath it.
-form.addEventListener('submitHandler');
+// const form = document.getElementById("credit_card_form");//chatGPT helped with this line and the one beneath it.
+// form.addEventListener('submit',function(submitHandler)){
+    
+// }
 
-function submitHandler(event){
-    event.preventDefault();
-}
+// function submitHandler(event){
+//     event.preventDefault();
+// }
 
 
 // provided example code
