@@ -34,9 +34,25 @@ function submitHandler(event) {
 	if (errorMsg !== '') {
 		// there was an error. stop the form and display the errors.
 		displayError(errorMsg)
+		// return false
+	}
+	// return true
+
+    // check month and year to ensure in the future
+    let month = this.Experation_month_input.value;
+    let year = this.Experation_year_input;
+    let date = new Date(year, month);
+    if(Date.now() > date){
+        errorMsg += 'month or year is not in the future\n'
+    }
+    if (errorMsg !== '') {
+		// there was an error. stop the form and display the errors.
+		displayError(errorMsg)
 		return false
 	}
+	
 	return true
+
 }
 
 document.querySelector('#credit-card').addEventListener('submit', submitHandler)
