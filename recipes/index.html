@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="recipes.js" defer></script>
+    <link rel="stylesheet" href="recipes.css">
+    <title>Recipes</title>
+</head>
+<body>
+    <header>
+        <img src="images\recipe-book.png" alt="Logo">
+        <h1>RECIPE BOOK</h1>
+
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" id="search-query" name="q" placeholder="Find a recipe" required>
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <main>
+        <div clas="recipe-card">
+            <span
+                class="rating"
+                role="img"
+                aria-label="Rating: 4 out of 5 stars">
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">☆</span>
+            </span>    
+        </div>
+        
+    </main>
+
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+    </footer>
+</body>
+</html>
