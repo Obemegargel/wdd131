@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #B62A00;
+  --secondary-color: #ffa023;
+  --accent1-color: #000;
+  --accent2-color: #ffffff;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Shadows Into Light', cursive; /*IM Fell French Canon SC*/
+  --paragraph-font: 'Bradley Hand', cursive;/*Lato, Helvetica, sans-serif*/
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(
+    --primary-color
+  ); /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: var(
+    --primary-color
+  ); /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: var(--accent1-color);/*--primary-color*/
+  --nav-link-color: var(--primary-color);/*--secondary-color*/
+  --nav-background-color: var(--secondary-color);/*--secondary-color*/
+  --nav-hover-link-color: --accent1-color;/*white*/
+  --nav-hover-background-color: var(--primary-color);/*--primary-color*/
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    width: 4em;
+    height: auto;
+}
+h1,h2{
+    font-family: var(--heading-font);
+}
+p{
+    font-family: var(--paragraph-font);
+}
+/* body{
+    margin:0;
+    width: 100%;
+    padding: 50%;
+    height:100%;
+    background-color: black;
+    background-image: url('images/paper/linepaperfaded.jpg'); 
+            background-size: contain; 
+            background-position: center; 
+            background-repeat: no-repeat;
+} */
+header{
+    /* padding:50; */
+    z-index: 10;
+    height: 50%;
+    width: 50%;
+    /* background-color: blue; */
+    /* color: green; */
+}
+
+.stickynote{
+    width: 20%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.stickynote div, img{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.stickynote div{
+    z-index: 10;
+}
+.stickynote p{
+    text-align: center;
+}
