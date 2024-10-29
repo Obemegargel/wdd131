@@ -25,3 +25,22 @@ const articles = [
 		stars: '⭐⭐⭐⭐'
 	}
 ]
+var numberofbooks = articles.length
+function createbooks(numberofbooks){
+	for (let i = 0; i < numberofbooks; i++){
+		document.getElementById("books-container").innerHTML += `
+		<div id="book${i}">
+
+		</div>`
+	}
+	
+}
+createbooks(numberofbooks)
+addhtmltobookidinbooks(articles[0])
+function addhtmltobookidinbooks(article){
+    
+    document.getElementById("book1").innerHTML = `
+                    <h2>${article.title}<h2>
+                    <img src="https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300" alt="book image" /> 
+                    <p>${artile.description}</p>`
+}
