@@ -9,17 +9,23 @@
 </head>
 <body>
     <header>
-        <img src="images\recipe-book.png" alt="Logo">
-        <h1>RECIPE BOOK</h1>
-
+        <div class="title">
+            <img src="images\recipe-book.png" alt="Logo">
+            <h1>RECIPE BOOK</h1>   
+        </div>
         <form action="/search" method="GET" class="search-form">
-            <input type="text" id="search-query" name="q" placeholder="Find a recipe" required>
-            <button type="submit">Search</button>
+            <div>
+                <input type="text" id="search-query" name="q" placeholder="Find a recipe" required>
+                <button type="submit"><img src="\recipes\images\search.svg" alt="Button Image"></button>    
+            </div>
+            
         </form>
     </header>
 
     <main>
-        <div clas="recipe-card">
+        
+        <div class="recipe-card">
+            <div id="recipe-section"></div>
             <span
                 class="rating"
                 role="img"

@@ -279,3 +279,19 @@ const recipes = [
 		rating: 4
 	}
 ]
+
+// 'Provo High Culinary Students'
+// parameter is type object named object
+postrecipe(recipes[0])
+function postrecipe(object){
+	document.getElementsByClassName("recipe-card").innerHTML = `
+	<img src=${object.image} alt="recipe image">
+	<div>
+		<p> ${object.tags}<p>
+		<h1>${object.name}<h1>
+	</div>
+    `;
+	// document.getElementById("recipe-image").innerHTML = `<img src=${object.image} alt="recipe image">`;
+	// document.getElementById("recipe-section").innerHTML = `<p> ${object.tags}</p>`;
+	// document.getElementById("recipe-h1").innerHTML = `<h1>${object.name}<h1>`;
+}

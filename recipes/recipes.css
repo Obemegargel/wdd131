@@ -1,8 +1,42 @@
 /* HEADER DETAILS */
+@import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");
+:root {
+--primary-color: #1B98E0;
+--secondary-color: #59c3c3;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: cursive;
+}
+
+body{
+    font-family: var(--secondary-font);
+    /* border: 2px solid black; */
+    border-right: 2px solid black;;
+    /* width: 25em; */
+    padding-left: 1em;
+}
+body h1{
+    font-family: var(--Amatic SC);
+}
+body p{
+    font-family: Arial, Helvetica,sans-serif;
+}
+img {
+	max-width: 100%;
+}
 header{
     border-bottom: 2px solid grey;
+    width: 100%;
+    justify-content: center;
     /* display: flex; */
     /* justify-content: center; */
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
 }
 header img{
     width:6em;
@@ -10,10 +44,46 @@ header img{
 }
 .search-form{
     width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.search-form div{
+    width: 100%;
+    display: flex;
+}
+.search-query{
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+}
+.search-form img{
+    height: .6em;
+    width: auto;
+    justify-content: center;
 }
 .search-form button{
     background-color: transparent;
     border: 1px solid grey;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+    
+}
+.recipe-card{
+    margin: 5%;
+    padding: 5%;
+    border: 2px solid black;
+    border-radius: 15%;
+
+    align-items: center;
+    justify-content: center;
+}
+.recipe-card div {
+    align-items: center;
+    justify-content: center;
+}
+.recipe-card img{
+    max-width: 100%;
+    width: 25em;
+    height: auto;
 }
 /* MAIN*/
 main div .recipe-card{
@@ -24,3 +94,14 @@ main div .recipe-card{
     height: auto;
 }
 /* FOOTER */
+@media (min-width: 960px) {
+    .recipe-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .recipe-section{
+        columns: 1/2;
+    }
+
+
+}
