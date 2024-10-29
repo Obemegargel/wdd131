@@ -25,22 +25,35 @@ const articles = [
 		stars: '⭐⭐⭐⭐'
 	}
 ]
-var numberofbooks = articles.length
-function createbooks(numberofbooks){
+
+function createbooks(articles){
+	var numberofbooks = articles.length
 	for (let i = 0; i < numberofbooks; i++){
 		document.getElementById("books-container").innerHTML += `
 		<div id="book${i}">
-
 		</div>`
+		addhtmltobookidinbooks(articles[i],i)
 	}
 	
 }
-createbooks(numberofbooks)
-addhtmltobookidinbooks(articles[0])
-function addhtmltobookidinbooks(article){
+
+
+createbooks(articles)
+
+// addhtmltobookidinbooks(articles[0])
+// console.log(articles[0])
+function addhtmltobookidinbooks(article,i){
     
-    document.getElementById("book1").innerHTML = `
-                    <h2>${article.title}<h2>
-                    <img src="https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300" alt="book image" /> 
-                    <p>${artile.description}</p>`
+    document.getElementById(`book${i}`).innerHTML = `
+				<div class="column1">
+					<p class="article-date">${article.date}</p>
+					<p class="article-ages">${article.ages}</p>
+					<p class="article-genre">${article.genre}</p>
+					<p class="article-stars">${article.stars}</p>
+				</div>
+				<div class="column2">
+					<h2>${article.title}<h2>
+					<img src=${article.imgSrc} alt="book image" /> 
+                    <p class="article-description">${article.description}</p>
+				</div>`
 }
