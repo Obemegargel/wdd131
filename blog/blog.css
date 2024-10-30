@@ -26,6 +26,7 @@
   --nav-hover-link-color: --accent1-color;/*white*/
   --nav-hover-background-color: var(--primary-color);/*--primary-color*/
 }
+
 .skiptocontent{
     position: absolute;
     top: -40px;
