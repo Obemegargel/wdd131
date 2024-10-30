@@ -53,7 +53,7 @@ function addhtmltobookidinbooks(article,i){
 				</div>
 				<div class="column2">
 					<h2>${article.title}<h2>
-					<img src=${article.imgSrc} alt="book image" /> 
+					<img class="col2img" src=${article.imgSrc} alt="book image" /> 
                     <p class="article-description">${article.description}</p>
 				</div>`
 }
