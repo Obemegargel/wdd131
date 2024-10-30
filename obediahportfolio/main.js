@@ -71,7 +71,7 @@ function uniquify(non_unique_types){
             <div class="stickynote">
                 <div>
                     <u><p id="${project.type}paragraph">
-                    <a class ="listendlink" href="C:/Users/Obeme/OneDrive/Documents/Documents/temp_Fall_2024_folder/wdd131/obediahportfolio/details.html">
+                    <a class ="listendlink" href="/wdd131/obediahportfolio/details.html">
                     ${project.name}
                     </a>
                     
